@@ -1,7 +1,7 @@
 /* Navbar itself */
 .navigationBar {
   overflow: hidden;
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(39, 39, 39);
   position: fixed; 
   top: 0; 
   width: 100%;
@@ -11,7 +11,7 @@
 .navigationBar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: rgb(226, 226, 226);
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
@@ -26,16 +26,16 @@
 }
 
 /* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+.welcome {
+  margin-top: 0px; /* Add a top margin to avoid content overlay */
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 25px;
   font-weight: 700;
-  color: rgb(91, 255, 247);
+  color: rgb(226, 226, 226);
   
 }
 
 body  {
-  background-color: rgb(43, 43, 43);
+  background-color: rgb(39, 39, 39);
 }
