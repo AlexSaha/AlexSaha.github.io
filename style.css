@@ -37,6 +37,11 @@
 }
 
 body  {
-  background-color: #313134;
+  background-color: #121212;
   
 }
+
+img {
+  border-radius: 60%;
+}
+
