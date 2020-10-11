@@ -27,3 +27,13 @@ body  {
   font-family: SFUIText; 
   src: url('./src/fonts/SFUIText-Regular.otf');
 } 
+
+h1 {
+  display: block;
+  font-size: 2.1em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
