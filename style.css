@@ -38,3 +38,9 @@ h1 {
   margin-right: 0;
   font-weight: bold;
 }
+
+.angularButton {
+  color: #b52e31;
+  font-size:35px;
+  text-decoration: none;
+}
