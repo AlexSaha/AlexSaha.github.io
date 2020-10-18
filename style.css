@@ -1,5 +1,5 @@
 .introArea {
-  margin-top: 0px; /* Add a top margin to avoid content overlay */
+  margin-top: 0px;
   text-align: center;
   font-family: SFUIText, Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -32,79 +32,37 @@ body  {
 h1 {
   display: block;
   font-size: 2.1em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
   font-size: 72px;
-  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-image: linear-gradient(45deg, #bdb863, #850c2e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .angularButton {
-  color: #b52e31;
-  font-size:35px;
-  text-decoration: none;
-}
-
-.gradient-text {
-
-  background-color: #CA4246;
-  
-   background-image: linear-gradient(
-        60deg,
-        #CA4246 16.666%, 
-        #E16541 16.666%, 
-        #E16541 33.333%, 
-        #F18F43 33.333%, 
-        #F18F43 50%, 
-        #8B9862 50%, 
-        #8B9862 66.666%, 
-        #476098 66.666%, 
-        #476098 83.333%, 
-        #A7489B 83.333%);
-  
-  background-size: 100%;
-  background-repeat: repeat;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  
-  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
-
-}
-
-.gradient-text:hover{
-    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
-}
-
-
-@keyframes rainbow-text-simple-animation-rev {
-    0% {
-        background-size: 650%;
-    }
-    40% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 100%;
-    }
-}
-
-/* Move the background and make it larger. */
-/* Animation shown when hovering over the text. */
-@keyframes rainbow-text-simple-animation {
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 650%;
-    }
-    100% {
-        background-size: 650%;
-    }
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-size: 45px;
+    font-family: SFUIText;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    background: -webkit-radial-gradient(rgb(202, 72, 72), rgb(65, 13, 13));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
   
-
+  
