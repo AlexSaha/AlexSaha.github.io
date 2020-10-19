@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
 .introArea {
   margin-top: 0px;
   text-align: center;
-  font-family: SFUIText, Arial, Helvetica, sans-serif;
+  font-family: 'Nunito', SFUIText, Arial, Helvetica, sans-serif;
   font-size: 25px;
   font-weight: 700;
   color: rgb(226, 226, 226);
@@ -10,14 +12,14 @@
 .websiteContent {
     text-align: center;
     font-size: 22px;
-    font-family: SFUIText;
+    font-family: 'Nunito', SFUIText;
     color: rgb(226, 226, 226);
 }
 
 body  {
   background-color: #121212;
   /* background-image: url('./src/blackWaves.jpg'); */
-  font-family: SFUIText;
+  font-family: 'Nunito', SFUIText;
 }
 
 .profileImg {
