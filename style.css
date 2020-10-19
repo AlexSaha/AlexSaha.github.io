@@ -40,29 +40,27 @@ h1 {
   font-size: 72px;
   background-image: linear-gradient(45deg, #bdb863, #850c2e);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.angularButton {
-    height: 50px;
-    min-width: 150px;
-    border: none;
-    border-radius: 5px;
-    font-size: 45px;
-    font-family: SFUIText;
-    position: relative;
-    transition: 1s;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-decoration: none;
-    background: -webkit-radial-gradient(rgb(202, 72, 72), rgb(65, 13, 13));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+.angularButton0 {
+  color: #b52e31 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  background: #ffffff00;
+  padding: 20px;
+  border: 2.2px solid #b52e31 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  border-radius: 15px;
+  }
   
+  .angularButton0:hover {
+    color: #121212 !important;
+    background: #b52e31;
+    border-color: #b52e31 !important;
+    transition: all 0.4s ease 0s;
+    }
   
