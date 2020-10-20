@@ -66,3 +66,12 @@ h1 {
     transition: all 0.4s ease 0s;
     }
   
+  
+.emailLink {
+  text-decoration: none;
+  color: #545454;
+}
+
+.emailLink:hover {
+  color: #b9b9b9;
+}
