@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
+@font-face {
+  font-family: SFUIText; 
+  src: url('./src/fonts/SFUIText-Regular.otf');
+} 
+
 .introArea {
   margin-top: 0px;
   text-align: center;
@@ -10,10 +15,10 @@
 }
 
 .websiteContent {
-    text-align: center;
-    font-size: 22px;
-    font-family: 'Nunito', SFUIText;
-    color: rgb(226, 226, 226);
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Nunito', SFUIText;
+  color: rgb(226, 226, 226);
 }
 
 body  {
@@ -25,11 +30,6 @@ body  {
 .profileImg {
   border-radius: 60%;
 }
-
-@font-face {
-  font-family: SFUIText; 
-  src: url('./src/fonts/SFUIText-Regular.otf');
-} 
 
 h1 {
   display: block;
@@ -57,21 +57,29 @@ h1 {
   display: inline-block;
   transition: all 0.4s ease 0s;
   border-radius: 15px;
-  }
+}
   
-  .angularButton0:hover {
-    color: #121212 !important;
-    background: #b52e31;
-    border-color: #b52e31 !important;
-    transition: all 0.4s ease 0s;
-    }
+.angularButton0:hover {
+  color: #121212 !important;
+  background: #b52e31;
+  border-color: #b52e31 !important;
+  transition: all 0.4s ease 0s;
+}
   
   
 .emailLink {
   text-decoration: none;
+  background: #8a8a8a0a;
+  padding: 8px;
+  font-size: 19px;
+  border-radius: 15px;
   color: #545454;
 }
 
 .emailLink:hover {
   color: #b9b9b9;
+}
+
+img {
+  padding: 8px;
 }
