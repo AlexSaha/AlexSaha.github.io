@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #4d4d4d;
-  background: #fff;
+  background: #bcb18fb4;
 }
 
 #page {
@@ -113,13 +113,15 @@ h1, h2, h3, h4, h5, h6, figure {
   vertical-align: middle;
   height: 600px;
 }
+
+/* Name and profile: */
 #fh5co-header .display-tc h1, #fh5co-header .display-tc h2, #fh5co-header .display-tc h3,
 .fh5co-cover .display-tc h1,
 .fh5co-cover .display-tc h2,
 .fh5co-cover .display-tc h3 {
   margin: 0;
   padding: 0;
-  color: #8FBCBB;
+  color: #bcb18f;
 }
 #fh5co-header .display-tc h1,
 .fh5co-cover .display-tc h1 {
@@ -227,7 +229,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: #8FBCBB;
+  background: #bcb18f;
 }
 #fh5co-features h2 {
   color: #fff;
@@ -369,8 +371,8 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
-  color: #8FBCBB;
+  display: inline;
+  color: #bcb18f;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -527,7 +529,8 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .timeline > li > .timeline-badge {
-  color: #fff;
+  /*Color of the briefcase & Grad Cap in timeline: */
+  color: #000000;
   width: 44px;
   height: 44px;
   line-height: 50px;
@@ -537,7 +540,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #8FBCBB;
+  background-color: #bcb18f;
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
