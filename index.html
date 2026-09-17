@@ -1,185 +1,378 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Alex Saha Web Portfolio</title>
-	<link rel="icon" type="image/x-icon" href="images/MyPhoto.JPG">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Alex Saha's Web Portfolio" />
-	<meta name="keywords" content="Alex Saha's Web Portfolio" />
-	<meta name="author" content="freehtml5.co" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexander Saha - Senior Mainframe/COBOL Developer</title>
+<meta name="description" content="Alexander Saha, Senior Mainframe/COBOL Developer - portfolio">
+<link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0d0a;
+    --panel: #0e120e;
+    --rule: #1d2a1d;
+    --text: #c7d0c7;
+    --text-dim: #6f7d6f;
+    --kw: #4fd671;
+    --kw-soft: #3aa858;
+    --amber: #e2a53d;
+    --amber-dim: #8a6a2f;
+    --white: #eef1ee;
+    --focus: #e2a53d;
+    --maxw: 760px;
+  }
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+  *{ box-sizing: border-box; }
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+  html,body{
+    margin:0; padding:0;
+    background: var(--bg);
+    color: var(--text);
+  }
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2361784384681939"
-     crossorigin="anonymous"></script>
-	</head>
-	<body>
-	<div class="fh5co-loader"></div>
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/GeometricBackground.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/MyPhoto.JPG);"></div>
-							<h1><span>Alexander Saha</span></h1>
-							<h3><span>Senior Mainframe/COBOL Developer</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://www.linkedin.com/in/alexander-saha/"><i class="icon-linkedin2"></i></a></li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+  body{
+    font-family: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+  }
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-		<!--	<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About:</h2>
-				</div>		
-			</div>			-->
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<br>
-						<li><span class="first-block">Full Name:</span><span class="second-block">Alexander Saha</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">AlexSaha7@gmail.com</span></li>
-						<li><span class="first-block">Location:</span><span class="second-block">Columbus, Ohio</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hi! I'm Alex.</h2>
-					<p>I'm a 28-year-old senior mainframe/COBOL engineer with 6 years of professional work expereience, currently at Peraton.</p>
-					<p>I have experience with a variety of development languages & tools including:<p>
-					<p>• z/OS, TSO, ISPF, DB2, CICS, MQ, VSAM, QMF, SDSF, File-AID, ChangeMan, InfoMan, ModMan</p>
-					<p>• COBOL, JCL, SQL, YAML/Swagger, JSON, XML</p>
-					<p>• GitHub, Azure DevOps, Jenkins, CI/CD Pipelines, Splunk, Apigee, Postman, SoapUI, ServiceNow, Jira, AGILE</p>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  /* subtle CRT scanline, used once, very low opacity */
+  body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.018) 0px,
+      rgba(255,255,255,0.018) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+    z-index: 5;
+  }
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Background:</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Programmer/Analyst 2</h3>
-									<span class="company">Huntington National Bank: January 2021 - August 2025</span>
-								</div>
-								<div class="timeline-body">
-									<p>• Collaborated on an Agile team to develop RESTful APIs widely utilized across the bank.</p>
-									<p>• Developed core banking applications supporting high-volume real-time and batch Memopost & Hogan transactions.</p>
-									<p>• Resolved high-priority production issues, ensuring system reliability.</p>
-								</div>
-							</div>
-						</li>
+  a{ color: var(--amber); text-decoration: none; border-bottom: 1px solid var(--amber-dim); }
+  a:hover{ color: var(--white); border-bottom-color: var(--white); }
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
 
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title"></h3>
-									<span class="company">Otterbein University: 2016 - 2020</span>
-								</div>
-								<div class="timeline-body">
-									<p>• Bachelors of Science - Computer Science</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>GPS Fitness App: Trek Tracker</h2>
-				</div>
-			</div>
-		<p style="background-color:#2E3440; color:#D8DEE9;font-size: 18px;padding-left: 20px;padding-right: 20px;padding-top: 20px;padding-bottom: 20px;text-align: center;border-radius: 15px">Individually designed, built and deployed Trek Tracker, a GPS based workout tracking app to the IOS App Store.</p></style>
-		<p style="background-color:#2E3440; color:#D8DEE9;font-size: 18px;padding-left: 20px;padding-right: 20px;padding-top: 5px;padding-bottom: 5px;text-align: left;border-radius: 15px">
-		• <b> Outdoor GPS Tracking: </b>Follow/retrace outdoor adventures with a satellite map view<br>
-		• <b> Real-Time Stats: </b>Provides useful info such as distance, speed, averages, and more<br>
-		• <b> History Log: </b>Access a list of saved sessions<br>
-		• <b> Personalized Profiles: </b>View a user profile that reflects saved maps<br>
-		• <b> Apple Fitness Compatibility: </b>Contributes to daily Fitness goals on the Apple Watch & Fitness app</p>
-		<a href="https://apps.apple.com/us/app/trek-tracker-workout-gps-logs/id1531415833" class="work" style="background-image: url(images/2024-Icon-v2-Transparent2.jpg);border-radius: 40px;width: 220px;height: 220px;margin-left: auto;
-		margin-right: auto;"></a>
-		<a href="https://apps.apple.com/us/app/trek-tracker-workout-gps-logs/id1531415833" class="work" style="background-image: url(images/AppStoreBadge.png);width: 210px;height: 90px;margin-left: auto;
-		margin-right: auto;"></a>
-			</div>
-		</div>
-	</div>
-</p>
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
-	
-	<!-- Main -->
-	<script src="js/main.js"></script>
+  .wrap{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 56px 20px 100px;
+  }
 
-	</body>
+  /* ---------- header / job card ---------- */
+
+  .jobcard{
+    color: var(--text-dim);
+    white-space: pre-wrap;
+    font-size: 13px;
+    line-height: 1.7;
+    margin: 0 0 34px;
+  }
+  .jobcard .k{ color: var(--kw-soft); }
+  .jobcard .v{ color: var(--text); }
+
+  .hero{
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 26px 0 30px;
+    margin-bottom: 36px;
+  }
+
+  .hero-row{
+    display:flex;
+    gap: 22px;
+    align-items: center;
+  }
+
+  .badge{
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    border: 1px solid var(--kw-soft);
+    color: var(--kw);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  h1.name{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+  }
+
+  .role{
+    margin: 6px 0 0;
+    color: var(--amber);
+    font-size: 14.5px;
+  }
+
+  .ready-line{
+    margin-top: 18px;
+    color: var(--kw);
+    font-size: 13.5px;
+  }
+  .cursor{
+    display:inline-block;
+    width: 8px;
+    height: 14px;
+    background: var(--kw);
+    margin-left: 2px;
+    vertical-align: -2px;
+    animation: blink 1s steps(1) infinite;
+  }
+  @keyframes blink{ 50%{ opacity: 0; } }
+
+  .contact-links{
+    margin-top: 16px;
+    font-size: 13.5px;
+    color: var(--text-dim);
+  }
+  .contact-links a{ margin-right: 16px; }
+
+  /* ---------- division headers ---------- */
+
+  .division{
+    margin: 46px 0 16px;
+  }
+  .division .rule{
+    color: var(--kw-soft);
+    font-size: 13px;
+    margin: 0 0 2px;
+  }
+  .division h2{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--kw);
+    letter-spacing: 0.5px;
+  }
+  .division .sub{
+    color: var(--text-dim);
+    font-size: 13px;
+    margin-top: 2px;
+  }
+
+  /* ---------- identification: bio as comment block ---------- */
+
+  .comment-block p{
+    margin: 0 0 14px;
+    color: var(--text);
+  }
+  .comment-block .gutter{
+    color: var(--text-dim);
+  }
+
+  /* ---------- data division: skill table ---------- */
+
+  .skill-table{
+    border: 1px solid var(--rule);
+  }
+  .skill-row{
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 14px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .skill-row:last-child{ border-bottom: none; }
+  .skill-label{
+    color: var(--kw-soft);
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+    padding-top: 1px;
+  }
+  .skill-value{
+    color: var(--text);
+    font-size: 13.5px;
+    line-height: 1.7;
+  }
+  .skill-value .val-kw{ color: var(--amber); }
+
+  /* ---------- procedure division: job steps ---------- */
+
+  .step{
+    border-left: 2px solid var(--rule);
+    padding-left: 20px;
+    margin-bottom: 34px;
+    position: relative;
+  }
+  .step::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    background: var(--bg);
+    border: 2px solid var(--kw-soft);
+  }
+  .step-head{
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .step-head .stepno{ color: var(--kw); }
+  .step-title{
+    margin: 4px 0 2px;
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 600;
+  }
+  .step-meta{
+    color: var(--amber);
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .step-body p{
+    margin: 0 0 8px;
+    font-size: 13.5px;
+    color: var(--text);
+  }
+  .rc{
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: var(--kw-soft);
+  }
+
+  .placeholder-note{
+    color: var(--text-dim);
+    font-size: 12px;
+    font-style: normal;
+  }
+
+  /* ---------- footer / end of job ---------- */
+
+  .endjob{
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--text-dim);
+    font-size: 13px;
+  }
+  .endjob .cc{ color: var(--kw); }
+
+  @media (max-width: 560px){
+    .wrap{ padding: 36px 16px 80px; }
+    .hero-row{ align-items: flex-start; }
+    h1.name{ font-size: 22px; }
+    .skill-row{ grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .cursor{ animation: none; opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <pre class="jobcard">// <span class="k">JOB</span>  <span class="v">SAHA001,'ALEXANDER SAHA',CLASS=A,MSGCLASS=X</span>
+// <span class="k">*</span>   <span class="v">SENIOR MAINFRAME / COBOL DEVELOPER</span></pre>
+
+  <div class="hero">
+    <div class="hero-row">
+      <div class="badge">AS</div>
+      <div>
+        <h1 class="name">Alexander Saha</h1>
+        <p class="role">Senior Mainframe / COBOL Developer</p>
+      </div>
+    </div>
+    <p class="ready-line">READY<span class="cursor"></span></p>
+    <p class="contact-links">
+      <a href="mailto:AlexSaha7@gmail.com">AlexSaha7@gmail.com</a><a href="https://www.linkedin.com/in/alexander-saha/">LinkedIn</a><span style="margin-right:16px;">Columbus, Ohio</span>
+    </p>
+  </div>
+
+  <!-- IDENTIFICATION DIVISION -->
+  <section class="division">
+    <p class="rule">*&#8203;&#8203;----------------------------------------------------------</p>
+    <h2>IDENTIFICATION DIVISION.</h2>
+  </section>
+
+  <div class="comment-block">
+    <p><span class="gutter">*&nbsp;</span>I'm a senior mainframe/COBOL engineer with 6 years of professional experience, currently at Peraton, before which I spent four and a half years building core banking systems at Huntington National Bank.</p>
+  </div>
+
+  <!-- ENVIRONMENT / DATA DIVISION -->
+  <section class="division">
+    <p class="rule">*&#8203;&#8203;----------------------------------------------------------</p>
+    <h2>DATA DIVISION.</h2>
+    <p class="sub">WORKING-STORAGE SECTION. 01 SKILL-TABLE.</p>
+  </section>
+
+  <div class="skill-table">
+    <div class="skill-row">
+      <div class="skill-label">05 PLATFORM</div>
+      <div class="skill-value">z/OS &middot; TSO &middot; ISPF &middot; DB2 &middot; CICS &middot; MQ &middot; VSAM &middot; QMF &middot; SDSF &middot; File-AID &middot; ChangeMan &middot; InfoMan &middot; ModMan</div>
+    </div>
+    <div class="skill-row">
+      <div class="skill-label">05 LANGUAGE</div>
+      <div class="skill-value">COBOL &middot; JCL &middot; SQL &middot; YAML / Swagger &middot; JSON &middot; XML</div>
+    </div>
+    <div class="skill-row">
+      <div class="skill-label">05 TOOLING</div>
+      <div class="skill-value">GitHub &middot; Azure DevOps &middot; Jenkins &middot; CI/CD Pipelines &middot; Splunk &middot; Apigee &middot; Postman &middot; SoapUI &middot; ServiceNow &middot; Jira &middot; Agile</div>
+    </div>
+  </div>
+
+  <!-- PROCEDURE DIVISION -->
+  <section class="division">
+    <p class="rule">*&#8203;&#8203;----------------------------------------------------------</p>
+    <h2>PROCEDURE DIVISION.</h2>
+    <p class="sub">Work executed, in order.</p>
+  </section>
+
+  <div class="step">
+    <div class="step-head"><span class="stepno">STEP020</span>&nbsp;EXEC&nbsp;PGM=MAINFRAME-ENGINEER</div>
+    <h3 class="step-title">Peraton</h3>
+    <p class="step-meta">August 2025 &ndash; Present</p>
+    <div class="step-body">
+      <p>&bull; Maintained and enhanced z/OS mainframe applications processing medicare claims through the FISS system, ensuring compliance with CMS regulations.</p>
+      <p>&bull;  Performed business analysis, building technical design documents outlining program changes at a low level.</p>
+    </div>
+    <div class="rc">RC=0000</div>
+  </div>
+
+  <div class="step">
+    <div class="step-head"><span class="stepno">STEP010</span>&nbsp;EXEC&nbsp;PGM=PROGRAMMER-ANALYST-2</div>
+    <h3 class="step-title">Huntington National Bank</h3>
+    <p class="step-meta">January 2021 &ndash; August 2025</p>
+    <div class="step-body">
+      <p>&bull; Collaborated on an Agile team to develop RESTful APIs used widely across the bank.</p>
+      <p>&bull; Built core banking applications supporting high-volume real-time and BATCH Memopost transactions.</p>
+      <p>&bull; Resolved high-priority production issues to keep systems reliable.</p>
+    </div>
+    <div class="rc">RC=0000</div>
+  </div>
+
+  <div class="step">
+    <div class="step-head"><span class="stepno">STEP000</span>&nbsp;EXEC&nbsp;PGM=EDUCATION</div>
+    <h3 class="step-title">Otterbein University</h3>
+    <p class="step-meta">2016 &ndash; 2020</p>
+    <div class="step-body">
+      <p>&bull; Bachelor of Science - Computer Science</p>
+    </div>
+    <div class="rc">RC=0000</div>
+  </div>
+
+  <div class="endjob">
+    // END SAHA001 - <span class="cc">MAXCC=0000</span> - Thank you for visiting!
+  </div>
+</div>
+</body>
 </html>
-
